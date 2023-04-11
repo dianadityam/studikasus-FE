@@ -1,0 +1,89 @@
+$font-stack: 'Quicksand', sans-serif;
+
+.container {
+    font: 100% $font-stack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .detailContainer {
+        width: 75%;
+        margin: 200px 0;
+        display: flex;
+        justify-content: center;
+        .imageWrapper {
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+            img {
+                width: 20em;
+            }
+        }
+        .textWrapper {
+            width: 50%;
+            padding-right: 20px;
+            margin-left: 30px;
+            line-height: 30px;
+            h1 {
+                color: #c58940;
+            }
+            h4 {
+                word-spacing: 5px;
+                font-weight: 500;
+                span {
+                    color: rgb(167, 167, 167);
+                    font-weight: 500;
+                }
+            }
+            .quantityInput {
+                .displayeNone {
+                    display: none;
+                }
+                button {
+                    cursor: pointer;
+                }
+                .inputValue {
+                    font: 100% $font-stack;
+                    width: 20px;
+                    text-align: center;
+                    border-style: none;
+                }
+                .quantityButton {
+                    font: 100% $font-stack;
+                    font-weight: 900;
+                    border: none;
+                    border-radius: 20px;
+                    width: 40px;
+                    height: 25px;
+                    padding: 2px;
+                }
+                .cartButton {
+                    margin-left: 20px;
+                    border: none;
+                    width: 100px;
+                    padding: 4px;
+                    background-color: #d81350;
+                    color: white;
+                    font: 100% $font-stack;
+                    font-size: 13px;
+                    font-weight: 800;
+                    border-radius: 20px;
+                }
+            }
+            p {
+                margin-top: 50px;
+                font-weight: 500;
+                span {
+                    font-weight: 700;
+                    color: gray;
+                }
+                text-align: justify;
+                font-size: 13px;
+                padding-right: 100px;
+            }
+        }
+    }
+}

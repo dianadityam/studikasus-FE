@@ -1,0 +1,29 @@
+.invoiceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .invoiceTitle {
+        align-self: flex-start;
+        margin: 10px 10rem;
+    }
+    p {
+        font-size: 12px;
+    }
+    .confirmButton {
+        margin: 20px 0;
+        border: none;
+        width: 200px;
+        padding: 8px;
+        background-color: #d81350;
+        color: white;
+        font-size: 15px;
+        font-weight: 800;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover {
+            background-color: #f40551;
+        }
+    }
+}

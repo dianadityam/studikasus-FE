@@ -1,0 +1,26 @@
+$font-stack: 'Quicksand', sans-serif;
+.accountContainer {
+    font: 100% $font-stack;
+}
+.profileContainer {
+    width: 60%;
+    background-color: #faeab1;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    margin-left: 12%;
+    margin-top: 14em;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 12px;
+    }
+}
+.tabsContainer {
+    font: 100% $font-stack;
+
+    li {
+        font-size: 14px;
+    }
+}

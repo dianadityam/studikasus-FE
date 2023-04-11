@@ -1,0 +1,66 @@
+$font-stack: 'Quicksand', sans-serif;
+.app {
+    padding: 50px 0;
+    .header {
+        display: flex;
+        margin-left: 6.5em;
+        gap: 25px;
+        form {
+            font: 100% $font-stack;
+        }
+    }
+    font: 100% $font-stack;
+    .productContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        margin: 40px 0;
+        .productWrapper {
+            width: 250px;
+            height: 350px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            .productImage {
+                height: 200px;
+                width: 100%;
+                object-fit: contain;
+            }
+            .textWrapper {
+                margin-top: 10px;
+                .productName {
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                .productPrice {
+                    margin: 5px 0;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: #c58940;
+                }
+                .productCategory {
+                    font-size: 13px;
+                    color: gray;
+                }
+                .detail {
+                    color: gray;
+                    font-size: 11px;
+                    &:hover {
+                        color: black;
+                    }
+                }
+                .cartButton {
+                    margin: 10px 0;
+                    cursor: pointer;
+                }
+                .displayNone {
+                    display: none;
+                }
+            }
+        }
+    }
+}
